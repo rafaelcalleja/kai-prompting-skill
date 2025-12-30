@@ -1,0 +1,49 @@
+# Example data for Briefing.hbs template
+# Usage: bun run tools/RenderTemplate.ts --template templates/primitives/Briefing.hbs --data templates/data/examples/briefing-example.yaml
+
+briefing:
+  type: research
+  context_level: standard
+
+agent:
+  id: researcher-1
+  name: Dr. Research
+  role: Security Research Analyst
+  personality:
+    perspective: academic
+    traits:
+      - thorough
+      - skeptical
+      - methodical
+      - citation-focused
+
+context:
+  summary: We are investigating rate limiting implementations for our API gateway to prevent abuse while maintaining good user experience.
+  background: |
+    The current system has no rate limiting, leading to occasional abuse.
+    We need a solution that balances security with usability.
+    Budget allows for either custom implementation or managed service.
+  constraints:
+    - Must support 10,000 requests/second at peak
+    - Cannot add more than 5ms latency
+    - Must work with existing Redis infrastructure
+
+task:
+  description: Research adaptive rate limiting algorithms and provide recommendations for our use case.
+  questions:
+    - What are the most effective adaptive rate limiting algorithms?
+    - What are the tradeoffs between token bucket, leaky bucket, and sliding window?
+    - How do major cloud providers implement rate limiting?
+  deliverables:
+    - Summary of top 3 algorithms with pros/cons
+    - Recommendation for our specific constraints
+    - Implementation complexity estimate
+
+output_format:
+  type: markdown
+  sections:
+    - Executive Summary
+    - Algorithm Comparison
+    - Recommendation
+    - Implementation Notes
+    - References

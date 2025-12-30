@@ -1,0 +1,42 @@
+{{!--
+  ROSTER Template
+  Purpose: Generate data-driven definitions for agents, skills, or any entity list
+  Data Structure:
+    roster:
+      title: string
+      description: string (optional)
+    entities:
+      - id: string
+        name: string
+        role: string
+        traits: [string]
+        description: string (optional)
+--}}
+
+# {{roster.title}}
+
+{{#if roster.description}}
+{{roster.description}}
+
+{{/if}}
+---
+
+{{#each entities}}
+## {{name}}
+
+**ID:** `{{id}}`
+**Role:** {{role}}
+
+{{#if traits}}
+**Traits:** {{#each traits}}{{this}}{{#unless @last}}, {{/unless}}{{/each}}
+{{/if}}
+
+{{#if description}}
+{{description}}
+{{/if}}
+
+{{#unless @last}}
+---
+
+{{/unless}}
+{{/each}}

@@ -1,0 +1,43 @@
+# Example data for Roster.hbs template
+# Usage: bun run tools/RenderTemplate.ts --template templates/primitives/Roster.hbs --data templates/data/examples/roster-example.yaml
+
+roster:
+  title: AI Agent Team
+  description: Specialized agents for different tasks in the development workflow.
+
+entities:
+  - id: researcher
+    name: Dr. Research
+    role: Security Research Analyst
+    traits:
+      - thorough
+      - skeptical
+      - methodical
+    description: Handles all research tasks including literature review, competitive analysis, and technical deep-dives.
+
+  - id: architect
+    name: Blueprint
+    role: Systems Architect
+    traits:
+      - strategic
+      - detail-oriented
+      - pragmatic
+    description: Designs system architecture, evaluates tradeoffs, and ensures scalability.
+
+  - id: coder
+    name: Pixel
+    role: Implementation Engineer
+    traits:
+      - efficient
+      - quality-focused
+      - test-driven
+    description: Writes production code following best practices and established patterns.
+
+  - id: reviewer
+    name: Eagle Eye
+    role: Code Reviewer
+    traits:
+      - critical
+      - constructive
+      - security-aware
+    description: Reviews code for quality, security, and adherence to standards.

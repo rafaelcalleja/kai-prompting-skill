@@ -1,0 +1,17 @@
+{
+  "name": "prompting-tools",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "render": "bun run RenderTemplate.ts",
+    "validate": "bun run ValidateTemplate.ts",
+    "validate:all": "bun run ValidateTemplate.ts --all"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "kai-prompting-skill",
+  "version": "1.0.0",
+  "description": "Meta-prompting system with Handlebars templates, Claude 4.x best practices, and prompt engineering standards. Includes template-renderer and prompt-reviewer agents.",
+  "author": {
+    "name": "PAI",
+    "email": "noreply@pai.dev"
+  },
+  "repository": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+  "keywords": [
+    "prompting",
+    "templates",
+    "handlebars",
+    "meta-prompting",
+    "claude-4",
+    "prompt-engineering"
+  ]
+}
