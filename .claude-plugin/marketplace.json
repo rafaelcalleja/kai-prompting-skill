@@ -1,0 +1,12 @@
+{
+  "name": "kai-prompting-skill",
+  "description": "Meta-prompting system with Handlebars templates and Claude 4.x best practices",
+  "plugins": [
+    {
+      "name": "kai-prompting-skill",
+      "version": "1.0.0",
+      "description": "Meta-prompting system with Handlebars templates, Claude 4.x best practices, and prompt engineering standards. Includes template-renderer and prompt-reviewer agents.",
+      "path": "."
+    }
+  ]
+}
