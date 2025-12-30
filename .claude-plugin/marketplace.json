@@ -1,13 +1,15 @@
 {
   "name": "kai-prompting-skill",
   "description": "Meta-prompting system with Handlebars templates and Claude 4.x best practices",
-  "owner": "rafaelcalleja",
+  "owner": {
+    "name": "rafaelcalleja"
+  },
   "plugins": [
     {
       "name": "kai-prompting-skill",
       "version": "1.0.0",
       "description": "Meta-prompting system with Handlebars templates, Claude 4.x best practices, and prompt engineering standards.",
-      "source": "local"
+      "source": "./"
     }
   ]
 }
