@@ -11,14 +11,36 @@ Meta-prompting system with Handlebars templates, Claude 4.x best practices, and 
 
 ## Installation
 
-```bash
-# Use as plugin
-claude --plugin-dir ~/kai-prompting-skill
+### Option 1: Marketplace (Recommended)
 
-# Or install dependencies for CLI tools
-cd ~/kai-prompting-skill/skills/prompting/tools
+```bash
+# From Claude Code, run:
+/plugin marketplace add rafaelcalleja/kai-prompting-skill
+/plugin install kai-prompting-skill@rafaelcalleja-kai-prompting-skill
+```
+
+### Option 2: Development/Testing
+
+```bash
+# Clone and use directly
+git clone https://github.com/rafaelcalleja/kai-prompting-skill.git
+claude --plugin-dir ./kai-prompting-skill
+```
+
+### Option 3: CLI Tools Only
+
+```bash
+cd kai-prompting-skill/skills/prompting/tools
 bun install
 ```
+
+## Verify Installation
+
+Once installed, test with:
+
+- Ask: *"help me render a briefing template"* → activates the prompting skill
+- Ask: *"review this prompt for quality"* → activates the prompt-reviewer agent
+- Ask: *"generate a roster from YAML data"* → activates the template-renderer agent
 
 ## Components
 
