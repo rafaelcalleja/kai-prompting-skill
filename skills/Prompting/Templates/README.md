@@ -39,7 +39,7 @@ Handlebars notation (Anthropic's official syntax):
 ### Basic Rendering
 
 ```bash
-bun run $PAI_DIR/skills/Prompting/Tools/RenderTemplate.ts \
+bun run ${CLAUDE_PLUGIN_ROOT}/skills/Prompting/Tools/RenderTemplate.ts \
   --template Primitives/Roster.hbs \
   --data Data/Examples/Agents.yaml \
   --output Compiled/AgentRoster.md
@@ -48,7 +48,7 @@ bun run $PAI_DIR/skills/Prompting/Tools/RenderTemplate.ts \
 ### Preview Without Writing
 
 ```bash
-bun run $PAI_DIR/skills/Prompting/Tools/RenderTemplate.ts \
+bun run ${CLAUDE_PLUGIN_ROOT}/skills/Prompting/Tools/RenderTemplate.ts \
   --template Primitives/Briefing.hbs \
   --data Data/Examples/Briefing.yaml \
   --preview

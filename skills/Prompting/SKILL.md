@@ -46,7 +46,7 @@ Five core primitives for programmatic prompt generation:
 
 **RenderTemplate.ts** - Core rendering engine
 ```bash
-bun run $PAI_DIR/skills/Prompting/Tools/RenderTemplate.ts \
+bun run ${CLAUDE_PLUGIN_ROOT}/skills/Prompting/Tools/RenderTemplate.ts \
   --template Primitives/Briefing.hbs \
   --data path/to/data.yaml \
   --output path/to/output.md
@@ -54,7 +54,7 @@ bun run $PAI_DIR/skills/Prompting/Tools/RenderTemplate.ts \
 
 **ValidateTemplate.ts** - Template syntax checker
 ```bash
-bun run $PAI_DIR/skills/Prompting/Tools/ValidateTemplate.ts \
+bun run ${CLAUDE_PLUGIN_ROOT}/skills/Prompting/Tools/ValidateTemplate.ts \
   --template Primitives/Briefing.hbs
 ```
 
