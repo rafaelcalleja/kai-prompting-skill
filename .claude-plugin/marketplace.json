@@ -1,28 +1,15 @@
 {
   "name": "kai-prompting-skill",
-  "displayName": "Kai Prompting Skill",
-  "version": "1.0.0",
-  "description": "Meta-prompting system for dynamic prompt generation using Handlebars templates, Claude 4.x best practices, and the Fabric pattern system. Includes the Ultimate Prompt Template, five core primitives (Roster, Voice, Structure, Briefing, Gate), and CLI tools for rendering and validation.",
+  "description": "Meta-prompting system for dynamic prompt generation using Handlebars templates, Claude 4.x best practices, and the Fabric pattern system",
   "owner": {
     "name": "danielmiessler"
   },
-  "source": "./",
-  "repository": "https://github.com/danielmiessler/kai-prompting-skill",
-  "keywords": [
-    "prompting",
-    "templates",
-    "handlebars",
-    "meta-prompting",
-    "prompt-engineering",
-    "fabric",
-    "claude-4",
-    "context-engineering",
-    "templating"
-  ],
-  "categories": [
-    "productivity",
-    "development",
-    "automation"
-  ],
-  "license": "MIT"
+  "plugins": [
+    {
+      "name": "kai-prompting-skill",
+      "version": "1.0.0",
+      "description": "Meta-prompting system for dynamic prompt generation using Handlebars templates, Claude 4.x best practices, and the Fabric pattern system",
+      "source": "./"
+    }
+  ]
 }
