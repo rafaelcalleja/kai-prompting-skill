@@ -1,18 +1,20 @@
 {
   "name": "kai-prompting-skill",
   "version": "1.0.0",
-  "description": "Meta-prompting system with Handlebars templates, Claude 4.x best practices, and prompt engineering standards. Includes template-renderer and prompt-reviewer agents.",
+  "description": "Meta-prompting system for dynamic prompt generation using Handlebars templates, Claude 4.x best practices, and the Fabric pattern system.",
   "author": {
-    "name": "PAI",
-    "email": "noreply@pai.dev"
+    "name": "danielmiessler"
   },
-  "repository": "https://github.com/danielmiessler/Personal_AI_Infrastructure",
+  "license": "MIT",
   "keywords": [
     "prompting",
     "templates",
     "handlebars",
     "meta-prompting",
+    "prompt-engineering",
+    "fabric",
     "claude-4",
-    "prompt-engineering"
+    "context-engineering",
+    "templating"
   ]
 }
